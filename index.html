@@ -1,36 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <title>Vite + React</title>
   </head>
   <body>
-    <h1 style="margin-top: 0.6em">Weather App</h1>
-    <div class="box">
-      <div>
-        <div class = "input-div">
-          <input
-            type="text" name="city" id="cityI" value="" placeholder="Enter Your Location"
-          />
-          <button id="searchbtn">Search</button>
-        </div>
-     
-        <div class="output">
-          <img src="img/clear.jpg" alt="">
-          <p><span id="main"></span></p>
-          <p>Temperature : <span id="temp"></span><span> &deg;C</span></p>
-          <p>Feels Like : <span id="feels"></span><span> &deg;C</span></p>
-          <p>Humidity : <span id="humid"></span><span> %</span></p>
-          <p>Wind Speed : <span id="wind"></span><span> m/s</span></p>
-          <p>Description : <span id="desc"></span></p>
-        </div>
-      </div>
-    </div>
-
-    <script src="script.js">
-    </script>
+    <div id="root"></div>
+    
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
